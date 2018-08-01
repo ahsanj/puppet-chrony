@@ -5,8 +5,9 @@ class chrony::service (
   $service_hasstatus      = $chrony::service_hasstatus,
   $service_hasrestart     = $chrony::service_hasrestart,
 ) {
-  service { 'chronyd':
+  service { 'chrony':
     ensure     => $service_ensure,
+    name       => $service_name,
     enable     => $service_enable,
     hasstatus  => $service_hasstatus,
     hasrestart => $service_hasrestart,
