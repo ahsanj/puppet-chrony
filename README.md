@@ -1,5 +1,7 @@
 # puppet-chrony
 
+- https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/set-time.html
+- Module works on both Redhat and Debain based distribution.
 
 ## Puppet run
 
