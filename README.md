@@ -3,6 +3,7 @@
 
 ## Puppet run
 
+```
 puppet agent -t
 Info: Using configured environment 'production'
 Info: Retrieving pluginfacts
@@ -40,9 +41,12 @@ Info: /Stage[main]/Chrony::Service/Service[chrony]: Unscheduling refresh on Serv
 Notice: /Stage[main]/Puppet_enterprise::Puppetdb/File[/var/log/puppetlabs/puppetdb/puppetdb.log]/mode: mode changed '0644' to '0640'
 Notice: Applied catalog in 16.04 seconds
 
+```
+
 
 # IP address to synchronize the time.
 
+```
 chronyc sources -v
 210 Number of sources = 1
 
@@ -57,10 +61,11 @@ chronyc sources -v
 MS Name/IP address         Stratum Poll Reach LastRx Last sample
 ===============================================================================
 ^* 169.254.169.123               3   6    37    51   -971ns[ -230us] +/-  479us
-
+```
 
 ## Time synchronization metrics
 
+```
 $ chronyc tracking
 
 Reference ID    : A9FEA97B (169.254.169.123)
@@ -77,6 +82,7 @@ Root dispersion : 0.000136863 seconds
 Update interval : 64.2 seconds
 Leap status     : Normal
 
+```
 
 
 
