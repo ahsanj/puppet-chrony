@@ -18,7 +18,7 @@
 # better to use IP numbers than host names.
 
 <% if @aws_chrony_server %>
-server 169.254.169.123 prefer iburst
+server <%= @server %> prefer iburst
 <% end %>
 
 # Look here for the admin password needed for chronyc.  The initial

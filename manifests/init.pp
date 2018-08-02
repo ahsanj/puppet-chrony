@@ -6,6 +6,7 @@ class chrony(
  String $config_loc       = $chrony::params::config_loc,
  $aws_chrony_server       = $chrony::params::aws_chrony_server,
  $template                = $chrony::params::template,
+ $server                  = $chrony::params::server,
  $service_ensure          = $chrony::params::service_ensure,
  $service_name            = $chrony::params::service_name,
  $service_enable          = $chrony::params::service_enable,

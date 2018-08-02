@@ -4,7 +4,7 @@
 
 
 <% if @aws_chrony_server %>
-server 169.254.169.123 prefer iburst
+server <%= @server %> prefer iburst
 <% end %>
 
 
