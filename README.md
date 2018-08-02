@@ -1,7 +1,7 @@
 # puppet-chrony
 
-- https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/set-time.html
-- Module works on both Redhat and Debain based distribution.
+- https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/set-time.html.
+- Module works on Redhat and Debain based distributions.
 
 ## Puppet run
 
@@ -11,7 +11,7 @@ Info: Using configured environment 'production'
 Info: Retrieving pluginfacts
 Info: Retrieving plugin
 Info: Loading facts
-Info: Caching catalog for ahsanjaved1.mylabserver.com
+Info: Caching catalog for ahsan.ahsanjaved.com
 Info: Applying configuration version '1533205780'
 Notice: /Stage[main]/Chrony::Install/Package[chrony]/ensure: created
 Notice: /Stage[main]/Chrony::Config/File[/etc/chrony.conf]/content:
