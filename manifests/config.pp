@@ -7,8 +7,8 @@ class chrony::config (
 ) { 
    file { "${config_loc}":
      ensure  => file,
-     owner   => 0,
-     group   => 0,
+     owner   => 'root',
+     group   => 'root',
      mode    => $config_file_mode,
      content => template("$module_name/${template}.erb")
  }
