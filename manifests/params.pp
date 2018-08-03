@@ -1,3 +1,4 @@
+# parameters for chrony class
 class chrony::params {
   $aws_chrony_server = true
   $package_name      = 'chrony'
@@ -11,14 +12,14 @@ class chrony::params {
 
   $service_name = $facts['os']['family'] ? {
     'Debian' => 'chrony',
-     default  => 'chronyd'
+    default  => 'chronyd'
   }
   $template  = $facts['os']['family'] ? {
-   'Debian' => 'debian_chrony.conf',
+    'Debian' => 'debian_chrony.conf',
     default => 'redhat_chrony.conf'
   }
   $config_loc = $facts['os']['family'] ? {
     'Debian' => '/etc/chrony/chrony.conf',
-     default => '/etc/chrony.conf'
+    default => '/etc/chrony.conf'
   }
 }

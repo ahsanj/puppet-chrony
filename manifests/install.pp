@@ -1,8 +1,9 @@
+# install the chrony package
 class chrony::install(
   String $package_name   = $chrony::package_name,
   String $package_ensure = $chrony::package_ensure,
-) {
-  package { 'chrony': 
+  ){
+  package{ 'chrony':
     ensure => $package_ensure,
   }
 }

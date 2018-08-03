@@ -1,3 +1,4 @@
+# This class start and manages the chrony service
 class chrony::service (
   String $service_name    = $chrony::service_name,
   String $service_ensure  = $chrony::service_ensure,
